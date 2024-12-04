@@ -590,6 +590,11 @@
   width: 360px;
 }
 
+.button.is-middle {
+  width: 300px;
+  height: 48px;
+}
+
 .button_text {
   z-index: 2;
   text-transform: uppercase;
@@ -1105,7 +1110,7 @@
 
 .login-desktop {
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 60px;
   display: flex;
 }
 
@@ -1121,10 +1126,12 @@
 }
 
 .button-sublink {
-  border: 2px solid #0000;
-  border-radius: 18px;
+  border: 2px solid #522e92;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
+  width: 300px;
+  height: 48px;
   padding: .35rem .5rem;
   font-weight: 500;
   text-decoration: none;
@@ -1133,8 +1140,8 @@
 }
 
 .button-sublink:hover {
-  border: 2px solid #2b0a64;
-  border-radius: 18px;
+  border: 2px solid #522e92;
+  border-radius: 10px;
 }
 
 .button-sublink:active {
@@ -1336,6 +1343,12 @@
   opacity: .5;
 }
 
+.text-span-violet {
+  color: #2b0a64;
+  font-size: 22px;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 1280px) {
   .navbar_component {
     margin-bottom: 0;
@@ -1394,8 +1407,8 @@
   }
 
   .button-group.is-wide {
-    grid-column-gap: 0rem;
-    grid-row-gap: 0rem;
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
     justify-content: center;
   }
 
@@ -1457,6 +1470,11 @@
   .card-header.v1 {
     grid-column-gap: 100px;
     grid-row-gap: 100px;
+  }
+
+  .button.is-middle {
+    width: 270px;
+    height: 38px;
   }
 
   .card-wrapper {
@@ -1641,6 +1659,11 @@
     margin-top: 20px;
   }
 
+  .button-sublink {
+    width: 270px;
+    height: 38px;
+  }
+
   .button-sublink:hover {
     border-color: #0000;
   }
@@ -1728,8 +1751,8 @@
   }
 
   .button-group.is-wide {
-    grid-column-gap: 0rem;
-    grid-row-gap: 0rem;
+    grid-column-gap: .7rem;
+    grid-row-gap: .7rem;
   }
 
   .h1 {
@@ -1745,6 +1768,10 @@
     background-size: 1320px;
     margin-left: 60px;
     margin-right: 60px;
+  }
+
+  .button.is-middle {
+    height: 58px;
   }
 
   .m-300-16-26.withmarg {
@@ -1771,6 +1798,10 @@
     grid-column-gap: 7rem;
     grid-row-gap: 7rem;
     margin-top: 40px;
+  }
+
+  .button-sublink {
+    height: 58px;
   }
 }
 
@@ -1894,12 +1925,18 @@
 
   .section_bg {
     color: #000;
+    background-color: #0000;
     border-right: 0 #000;
+    inset: 0%;
   }
 
   .hero_left-wrap {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .button.is-middle {
+    width: 357px;
   }
 
   .m-300-16-26 {
@@ -2001,6 +2038,10 @@
     grid-row-gap: 1rem;
     margin-top: 0;
     display: flex;
+  }
+
+  .button-sublink {
+    width: 357px;
   }
 
   .entry_top-wrap {
@@ -2446,9 +2487,9 @@
   }
 
   .logo-wrapper {
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-    justify-content: center;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    justify-content: space-around;
     align-items: center;
     display: flex;
   }
@@ -2479,7 +2520,7 @@
 
   .entry_top-wrap {
     margin-top: 40px;
-    margin-left: 220px;
+    margin-left: 230px;
     padding-top: 0;
   }
 
@@ -2537,6 +2578,12 @@
 
   .login-mobile-wrap, .login-mobile-wrap-copy, .logo-mobile-wrap {
     margin-left: 220px;
+  }
+
+  .logo-flex {
+    grid-column-gap: 42px;
+    grid-row-gap: 42px;
+    display: flex;
   }
 }
 
@@ -2758,6 +2805,12 @@
   .login-mobile-wrap, .login-mobile-wrap-copy, .logo-mobile-wrap {
     margin-left: 0;
   }
+
+  .logo-flex {
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    flex-flow: column;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2877,10 +2930,10 @@
   }
 
   .button-group.is-wide {
-    grid-column-gap: .25rem;
-    grid-row-gap: .25rem;
+    grid-column-gap: .4rem;
+    grid-row-gap: .4rem;
     justify-content: flex-end;
-    align-items: stretch;
+    align-items: center;
   }
 
   .button-group.is-wide.flex.margin {
@@ -2933,6 +2986,7 @@
   }
 
   .hero_subheading {
+    margin-bottom: 5px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -2955,6 +3009,11 @@
 
   .button.is-big {
     width: 250px;
+  }
+
+  .button.is-small {
+    width: 240px;
+    height: 38px;
   }
 
   .margin-text {
@@ -3056,6 +3115,11 @@
   .m-subtext {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .button-sublink.is-small {
+    width: 240px;
+    height: 38px;
   }
 
   .logo-wrapper {
