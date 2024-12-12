@@ -1440,6 +1440,7 @@
   flex-flow: row;
   justify-content: center;
   align-items: flex-start;
+  min-height: 110vh;
 }
 
 .block-bg {
@@ -1450,7 +1451,7 @@
   height: 24rem;
   padding-left: 40px;
   position: absolute;
-  inset: 17% .4rem 0% auto;
+  inset: 10% .4rem 0% auto;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1901,9 +1902,12 @@
   }
 
   .hero_component-bg.aligh.hero-height.navbar {
+    background-position: 0%;
+    background-size: cover;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
-    min-height: 120vh;
+    width: 1140px;
+    min-height: 110vh;
   }
 
   .block-bg {
@@ -1920,7 +1924,7 @@
     padding-bottom: 30px;
     padding-left: 30px;
     display: flex;
-    top: 15%;
+    top: 13%;
     right: .5rem;
   }
 }
@@ -2040,14 +2044,17 @@
   }
 
   .hero_component-bg.aligh.hero-height.navbar {
+    background-size: cover;
     min-height: 105vh;
   }
 
   .block-bg {
-    width: 30rem;
+    background-position: 0%;
+    width: 25rem;
     height: 30rem;
     padding-top: 60px;
     padding-left: 60px;
+    top: 8%;
     right: 7px;
   }
 }
@@ -2404,7 +2411,7 @@
 
   .block-bg {
     background-image: url('../images/bg-block.png');
-    background-position: 50%;
+    background-position: 0%;
     background-size: cover;
     width: 32rem;
     height: 32rem;
