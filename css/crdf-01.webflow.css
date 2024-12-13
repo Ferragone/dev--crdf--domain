@@ -216,6 +216,12 @@
   display: flex;
 }
 
+.hero_content.dropdown {
+  height: 100%;
+  position: relative;
+  overflow: visible;
+}
+
 .padding-global {
   color: #000;
   padding-left: 5%;
@@ -247,6 +253,7 @@
   font-weight: 700;
   display: flex;
   position: relative;
+  overflow: visible;
 }
 
 .m-text-link {
@@ -294,6 +301,7 @@
   flex-direction: column;
   width: 500px;
   display: flex;
+  overflow: hidden;
 }
 
 .button-group {
@@ -449,6 +457,10 @@
   bottom: 0;
 }
 
+.image_full.display {
+  display: none;
+}
+
 .section-log {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -556,6 +568,7 @@
   grid-row-gap: 0px;
   flex-flow: column;
   align-items: stretch;
+  margin-bottom: auto;
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
@@ -1467,8 +1480,110 @@
 }
 
 .absolute {
-  position: relative;
-  inset: auto 0% 0%;
+  background-image: url('../images/hacker.png');
+  background-position: 50%;
+  background-size: cover;
+  width: 25rem;
+  height: 25rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  position: absolute;
+  inset: 0% 0% auto;
+}
+
+.fd-700-20-28-play {
+  white-space: normal;
+  overflow-wrap: normal;
+  flex: 1;
+  align-self: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.fd-700-20-28-play.align-center {
+  color: #0f1a53;
+  text-align: center;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.drop-text {
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  flex-direction: column;
+  display: flex;
+}
+
+.drop-text.gap-2px {
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.list {
+  color: #0f1a53;
+  padding-left: 2rem;
+}
+
+.drop-v2 {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  flex-direction: column;
+  width: 500px;
+  padding-top: 48px;
+  padding-bottom: 0;
+  display: none;
+}
+
+.drop-v2.scroll-drop {
+  scrollbar-width: none;
+  height: 60vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden scroll;
+}
+
+.drop-v2.scroll-drop.no-padding {
+  padding-top: 1vh;
+}
+
+.drop-item-v2 {
+  width: 100%;
+  display: block;
+}
+
+.drop-v2-button {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  -webkit-text-stroke-width: 0px;
+  background-color: #fff;
+  border: 1.5px #000;
+  border-radius: 8px;
+  flex-flow: column;
+  align-items: center;
+  width: auto;
+  padding: 30px;
+  display: flex;
+}
+
+.fd-list-text-500-18-24 {
+  color: #0f1a53;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.drop-v2-content {
+  background-color: #fff;
+  border: 1.5px #000;
+  border-radius: 8px;
+  margin-top: 24px;
+  padding: 32px 24px;
+  display: none;
+  position: static;
+  box-shadow: 0 2px 25px #0b20581a;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1621,6 +1736,14 @@
   .card-header.v1 {
     grid-column-gap: 100px;
     grid-row-gap: 100px;
+  }
+
+  .hero_left-wrap {
+    padding-right: 0;
+  }
+
+  .hero_left-wrap.drop {
+    padding-right: 350px;
   }
 
   .button.is-middle {
@@ -1966,6 +2089,16 @@
     display: flex;
     top: 13%;
     right: .5rem;
+  }
+
+  .absolute {
+    width: 30rem;
+    height: 30rem;
+    inset: 0% auto 0% 0%;
+  }
+
+  .drop-v2 {
+    padding-top: 0;
   }
 }
 
@@ -2711,6 +2844,10 @@
     padding: 20px;
   }
 
+  .image_full.display {
+    display: inline-flex;
+  }
+
   .section-log {
     background-image: url('../images/bg-tablet.png');
     background-position: 50% 0;
@@ -3092,8 +3229,13 @@
     padding-top: 0;
   }
 
-  .block-bg {
+  .block-bg, .absolute {
     display: none;
+  }
+
+  .drop-v2.scroll-drop {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -3343,6 +3485,14 @@
   .hero_component-bg.hero {
     min-height: 120vh;
     padding-top: 0;
+  }
+
+  .fd-700-20-28-play {
+    text-align: left;
+  }
+
+  .fd-700-20-28-play.align-center {
+    max-width: none;
   }
 }
 
@@ -3699,6 +3849,19 @@
   .hero_component-bg.hero {
     justify-content: center;
     min-height: auto;
+  }
+
+  .fd-700-20-28-play {
+    font-size: 18px;
+  }
+
+  .fd-700-20-28-play.align-center {
+    flex: 1;
+  }
+
+  .drop-v2 {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
