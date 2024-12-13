@@ -184,6 +184,7 @@
   margin-left: 0;
   padding-bottom: 5vh;
   display: grid;
+  position: static;
 }
 
 .hero_content.block {
@@ -213,11 +214,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
   display: flex;
-}
-
-.hero_content._2block {
-  grid-column-gap: 3.5rem;
-  grid-row-gap: 3.5rem;
 }
 
 .padding-global {
@@ -356,8 +352,8 @@
 }
 
 .footer_left-wrap {
-  grid-column-gap: 200px;
-  grid-row-gap: 200px;
+  grid-column-gap: 208px;
+  grid-row-gap: 208px;
   color: #000;
   border-right: 1px solid #fff;
   flex-flow: column;
@@ -432,7 +428,7 @@
 .navbar_menu-links.is-tablet {
   grid-column-gap: 1.8rem;
   grid-row-gap: 1.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .footer_center-wrap {
@@ -448,6 +444,9 @@
 
 .image_full {
   width: 100%;
+  position: static;
+  top: -20rem;
+  bottom: 0;
 }
 
 .section-log {
@@ -556,9 +555,11 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   flex-flow: column;
+  align-items: stretch;
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
+  position: relative;
 }
 
 .footer {
@@ -724,10 +725,6 @@
 
 .hero_component.flex.gap.center {
   align-items: center;
-}
-
-.hero_component.flex.gap.center.card {
-  padding-top: 0%;
 }
 
 .hero_component.flex.count {
@@ -1469,6 +1466,11 @@
   inset: 10% .4rem 0% auto;
 }
 
+.absolute {
+  position: relative;
+  inset: auto 0% 0%;
+}
+
 @media screen and (min-width: 1280px) {
   .navbar_container {
     margin-top: 15px;
@@ -1545,8 +1547,8 @@
   }
 
   .footer_left-wrap {
-    grid-column-gap: 200px;
-    grid-row-gap: 200px;
+    grid-column-gap: 238px;
+    grid-row-gap: 238px;
   }
 
   .header-part {
@@ -1563,6 +1565,10 @@
     margin-bottom: 5px;
   }
 
+  .navbar_menu.is-page-height-tablet {
+    margin-bottom: 0;
+  }
+
   .navbar_menu-links {
     grid-column-gap: 2.5rem;
     grid-row-gap: 2.5rem;
@@ -1571,7 +1577,8 @@
   .navbar_menu-links.is-tablet {
     grid-column-gap: 2.9rem;
     grid-row-gap: 2.9rem;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 
   .section-log {
@@ -1669,9 +1676,8 @@
     display: flex;
   }
 
-  .hero_component.flex.gap.center.card {
-    margin-bottom: 60px;
-    padding-top: 0%;
+  .hero_component.flex.gap.center.size {
+    min-height: 60vh;
   }
 
   .hero_component.flex.count {
@@ -1685,6 +1691,10 @@
 
   .hero_component.hero {
     min-height: 610px;
+  }
+
+  .hero_component.aligh.hero-height.size {
+    min-height: 60vh;
   }
 
   .sigh-up_content.flex {
@@ -1745,6 +1755,7 @@
     justify-content: center;
     align-items: center;
     width: 85vw;
+    height: 65vh;
     display: block;
   }
 
@@ -1935,7 +1946,7 @@
     background-size: cover;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
-    width: 1140px;
+    width: 100%;
     min-height: 110vh;
   }
 
@@ -1976,11 +1987,6 @@
     width: 1150px;
   }
 
-  .hero_content._2block {
-    grid-column-gap: 6rem;
-    grid-row-gap: 6rem;
-  }
-
   .padding-global.no-pad {
     display: block;
   }
@@ -2006,10 +2012,7 @@
   .navbar_menu-links.is-tablet {
     grid-column-gap: 64px;
     grid-row-gap: 64px;
-  }
-
-  .footer_center-wrap {
-    padding-bottom: 140px;
+    margin-bottom: 35px;
   }
 
   .section-log {
@@ -2051,10 +2054,8 @@
     display: none;
   }
 
-  .hero_component.flex.gap.center.card {
-    min-height: 80vh;
-    margin-bottom: 100px;
-    padding-top: 0%;
+  .hero_component.flex.gap.center.size {
+    min-height: 60vh;
   }
 
   .sigh-up_content.flex {
@@ -2074,6 +2075,10 @@
     width: 45rem;
     margin-top: 100px;
     padding-bottom: 140px;
+  }
+
+  .slider-wrapper.picker {
+    height: 65vh;
   }
 
   .h1-block.custom {
@@ -2107,7 +2112,7 @@
     height: 30rem;
     padding-top: 60px;
     padding-left: 60px;
-    top: 8%;
+    top: 13%;
     right: 7px;
   }
 }
@@ -2144,12 +2149,8 @@
     white-space: normal;
   }
 
-  .container-large {
-    max-width: 80rem;
-  }
-
-  .container-large.footer {
-    max-width: none;
+  .hero_content.block.count {
+    padding-bottom: 0;
   }
 
   .hero_content.position {
@@ -2208,11 +2209,9 @@
   }
 
   .footer_left-wrap {
-    grid-column-gap: 198px;
-    grid-row-gap: 198px;
     border-right: 1px solid #fff;
     width: auto;
-    height: 320px;
+    height: 390px;
     margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -2247,12 +2246,13 @@
   .navbar_menu-links.is-tablet {
     grid-column-gap: 84px;
     grid-row-gap: 84px;
+    margin-bottom: 5px;
   }
 
   .footer_center-wrap {
     border-right: 1px solid #fff;
     padding-top: 0;
-    padding-bottom: 120px;
+    padding-bottom: 0;
     padding-right: 20px;
   }
 
@@ -2271,8 +2271,8 @@
   }
 
   .footer-text {
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     justify-content: space-between;
   }
 
@@ -2314,13 +2314,7 @@
     color: #000;
   }
 
-  .hero_component.flex.gap.center.card {
-    min-height: 10vh;
-    margin-bottom: 100px;
-    padding-top: 0%;
-  }
-
-  .hero_component.flex.gap.center.picker, .hero_component.flex.count, .hero_component.flex.drop {
+  .hero_component.flex.count, .hero_component.flex.drop {
     min-height: 50vh;
   }
 
@@ -2333,7 +2327,6 @@
   .hero_component.footer.drop.center {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    justify-content: center;
     align-items: center;
     width: 100%;
     display: flex;
@@ -2388,12 +2381,17 @@
   }
 
   .h1-m-700-64-78.custom {
-    font-size: 60px;
-    line-height: 74px;
+    font-size: 64px;
+    line-height: 78px;
   }
 
   .logo-wrap {
     margin-top: 0;
+  }
+
+  .slider-wrapper.picker {
+    height: 40vh;
+    overflow: hidden;
   }
 
   .h1-block {
@@ -2498,7 +2496,7 @@
   .hero_component-bg.aligh.hero-height.navbar {
     background-image: url('../images/bg-s.png');
     width: 1380px;
-    min-height: 95vh;
+    min-height: 100vh;
   }
 
   .block-bg {
@@ -2804,15 +2802,6 @@
 
   .hero_component.flex.gap.center {
     align-items: center;
-  }
-
-  .hero_component.flex.gap.center.card {
-    margin-top: 20px;
-    margin-bottom: 0;
-  }
-
-  .hero_component.flex.gap.center.picker {
-    margin-bottom: 0;
   }
 
   .hero_component.footer.drop {
