@@ -740,6 +740,10 @@
   align-items: center;
 }
 
+.hero_component.flex.gap.center.size {
+  min-height: 150vh;
+}
+
 .hero_component.flex.count {
   justify-content: center;
   min-height: 70vh;
@@ -1128,6 +1132,10 @@
 
 .h1-block.custom {
   display: none;
+}
+
+.section-drop {
+  margin-top: 60px;
 }
 
 .footer_wrapper-desktop {
@@ -1587,6 +1595,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .section-card {
+    margin-top: 20px;
+  }
+
   .navbar_container {
     margin-top: 15px;
   }
@@ -1800,7 +1812,7 @@
   }
 
   .hero_component.flex.gap.center.size {
-    min-height: 60vh;
+    min-height: 100vh;
   }
 
   .hero_component.flex.count {
@@ -2103,6 +2115,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .section-card {
+    margin-top: 0;
+  }
+
   .section-wrapper.custom {
     margin-bottom: 0;
   }
@@ -2188,7 +2204,7 @@
   }
 
   .hero_component.flex.gap.center.size {
-    min-height: 60vh;
+    min-height: 100vh;
   }
 
   .sigh-up_content.flex {
@@ -2216,6 +2232,10 @@
 
   .h1-block.custom {
     display: none;
+  }
+
+  .section-drop {
+    margin-top: 20px;
   }
 
   .login-desktop {
@@ -2447,6 +2467,10 @@
     color: #000;
   }
 
+  .hero_component.flex.gap.center.size {
+    min-height: 60vh;
+  }
+
   .hero_component.flex.count, .hero_component.flex.drop {
     min-height: 50vh;
   }
@@ -2534,7 +2558,11 @@
 
   .h1-block.custom {
     display: block;
-    bottom: 9%;
+    bottom: 7.5%;
+  }
+
+  .section-drop {
+    margin-top: 60px;
   }
 
   .footer_wrapper-desktop {
